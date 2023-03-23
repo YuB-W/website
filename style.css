@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+
+
+
+.image{
+
+    transition: 0.3s;
+    transform: rotateY(0deg);
+    -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
+    filter: blur(5px);
+}
+
+.image:hover {
+    transform: perspective(1500px) rotateY(-20deg);
+    -webkit-filter: blur(0px); /* Safari 6.0 - 9.0 */
+    filter: blur(0px);
+}
+
+@keyframes animate {
+    0%
+    {
+        transform:  rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+  /* Underline Reveal */
+  .hvr-underline-reveal {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+  }
+  .hvr-underline-reveal:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ff0a0a;
+    height: 4px;
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-dunderline-reveal:hover:before, .hvr-underline-reveal:focus:before, .hvr-underline-reveal:active:before {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  
+  .hvr-dunderline-reveal {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+  }
+  .hvr-dunderline-reveal:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #4458c4;
+    height: 4px;
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-underline-reveal:hover:before, .hvr-underline-reveal:focus:before, .hvr-underline-reveal:active:before {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+  ::-webkit-scrollbar {
+      width: 0;
+  }
+  /* ONLY CHANGE THESE COLORS */
+  :root {
+      --background: #0a0b0c;
+      --secondary-background: #0f1013; /* #0f1013 */
+      --main-color: #b91c1c;
+      --main-hover-color: #4f46e5;
+      --discord-col: #7289DA;
+  }
+  body {
+      margin: 0;
+      background-color: var(--background);
+  }
+  /* custom colors for html code */
+  .bg {
+      background-color: var(--background);
+  }
+  .dg {
+      background-color: var(--secondary-background);
+  }
+  .maincol-bg {
+      background-color: var(--main-color);
+  }
+  .maincol-bg-hover {
+      background-color: var(--main-hover-color);
+  }
+  .maincol-txt {
+      color: var(--main-color);
+  }
+  .maincol-txt-hover {
+      color: var(--main-hover-color);
+  }
+  .discord-col {
+      background-color: var(--discord-col);
+  }
+  .fnt {
+      font-family: 'Nunito Sans', sans-serif;
+  }
+  .content {
+      max-width: 70rem;
+      margin-inline: auto;
+  }
+  .miAuto {
+      margin-inline: auto;
+  }
+  .mw {
+      max-width: 75rem;
+  }
+  
+  body {
+    background-color: #1D1F20;
+    color: #EFEFFF;
+  }
+  .wrapper {
+      position: relative;
+      overflow: hidden;
+      width: 600px;
+      height: 370px; 
+      border: 1px solid black;
+  }
+  
